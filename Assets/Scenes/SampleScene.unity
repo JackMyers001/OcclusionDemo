@@ -442,8 +442,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4966719baa26e4b0e8231a24d9bd491a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FocusMode: 1
-  m_LightEstimationMode: 0
+  m_FocusMode: -1
+  m_LightEstimationMode: -1
   m_AutoFocus: 1
   m_LightEstimation: 0
   m_FacingDirection: 1
@@ -686,6 +686,7 @@ GameObject:
   - component: {fileID: 1369458392}
   - component: {fileID: 1369458391}
   - component: {fileID: 1369458390}
+  - component: {fileID: 1369458394}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -754,3 +755,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1369458394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369458389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c6af2d82f69f456eb6e832fd50862ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToSpawn: {fileID: 6752845455417416220, guid: 20913c3eb0452440594f4d84098d0fe5,
+    type: 3}
+  raycastManager: {fileID: 1369458390}
+  planeManager: {fileID: 1369458391}
